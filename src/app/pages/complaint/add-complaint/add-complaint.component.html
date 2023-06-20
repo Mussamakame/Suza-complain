@@ -1,0 +1,77 @@
+<div class="add-container">
+    <form action="" method="post">
+        <!--  -->
+        <mat-vertical-stepper linear>
+            <mat-step label="Status" [editable]="true" [completed]="true">
+                <div class="select-status">
+                    <label for="select-status">Select Status: </label>
+                    <select name="status" id="status">
+                        <option value="student" selected>Student</option>
+                        <option value="staff">Staff</option>
+                    </select>
+                </div>
+                <button type="button" matStepperNext>Next</button>
+            </mat-step>
+
+            <!-- select category -->
+            <mat-step label="Category">
+                <div class="category-complaint">
+                    <label for="category">Select category</label>
+                    <select name="category" id="category">
+                        <option value="sexual Violence">Sexual Violence</option>
+                        <option value="Bribe">Bribe</option>
+                        <option value="results">Exam Result</option>
+                        <option value="Fraud">Fraud</option>
+                        <option value="Infrastructure">Infrastructure</option>
+                        <option value="Oppression">Oppression</option>
+                        <option value="others">__others__</option>
+                    </select>
+                </div>
+                <button type="button" matStepperNext>Next</button>
+                &nbsp;
+                <button type="button" matStepperPrevious>Previous</button>
+            </mat-step>
+
+            <!-- location -->
+            <mat-step label="Location">
+                <div class="complaint-location">
+                    <label for="category">Complaint Location</label>
+                    <select name="category" id="category">
+                        <option value="administration">Administration</option>
+                        <option value="dispensary">Dispensary</option>
+                        <option value="library">Library</option>
+                        <option value="Department">Department</option>
+                        <option value="others">__Others__</option>
+                    </select>
+                </div>
+                <button type="button" matStepperNext>Next</button>
+                &nbsp;
+                <button type="button" matStepperPrevious>Previous</button>
+            </mat-step>
+
+            <!-- Explanations -->
+            <mat-step label="Explanation">
+                <div class="explanation">
+                    <label for="explanations">Explanation</label>
+                    <textarea rows="5" cols="30" autocapitalize="chatacters"></textarea>
+                </div>
+                <button type="button" matStepperNext>Next</button>
+                &nbsp;
+                <button type="button" matStepperPrevious>Previous</button>
+            </mat-step>
+
+            <!-- Attachment -->
+            <mat-step label="Attachments">
+                <div class="attachments">
+                    <label for="attachments">Attachments</label>
+                    <input type="file" name="attachments" id="attachment" autocapitalize="chatacters">
+                </div>
+
+                <div class="submit-complaint">
+                    <button type="submit" id="btn-submit-complaint">Submit</button>
+                </div>
+                <button type="button" matStepperPrevious>Previous</button>
+            </mat-step>
+        </mat-vertical-stepper>
+    </form>
+</div>

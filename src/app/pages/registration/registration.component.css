@@ -1,0 +1,42 @@
+.profile-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: calc(100% - 700px);
+    margin: 2em auto 1em;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    gap: .4em;
+}
+
+.user-info input {
+    border: 1px solid #ccc;
+    padding: .7em 1rem;
+}
+
+.user-info input:focus,
+button:focus {
+    outline: none;
+}
+
+.edit-info button {
+    border: 1px solid #CCC;
+    padding: .5em 1.5em;
+    box-shadow: 0 0 .4rem #ccc;
+    transition: all .3s ease-in-out;
+    /* border-radius: 24px; */
+}
+
+.edit-info button:focus {
+    outline-color: #39f;
+}
+
+.edit-info button:hover {
+    background-color: #39f;
+    color: white;
+}
+

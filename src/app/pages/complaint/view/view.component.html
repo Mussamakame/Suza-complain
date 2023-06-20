@@ -1,0 +1,21 @@
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Status</th>
+        <th scope="col">Category</th>
+        <th scope="col">Location</th>
+        <th>Explanation</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let recent of complaints">
+            <td>{{ recent.id }}</td>
+            <td>{{ recent.name }}</td>
+            <td>{{ recent.category }}</td>
+            <td>{{ recent.location }}</td>
+            <td>{{ recent.explanation }}</td>
+            <!-- <td><button type="button" class="btn btn-success">Solved</button></td> -->
+        </tr>
+    </tbody>
+  </table>

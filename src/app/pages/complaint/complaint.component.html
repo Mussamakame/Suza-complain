@@ -1,0 +1,20 @@
+<div class="complaint-container">
+    <!-- Selction cards -->
+    <div class="selection-cards">
+        <div class="cards">
+            <a routerLink="view-complaint">View Complaint</a>
+        </div>
+        <div class="cards">
+            <a routerLink="add-complaint">Add Complaint</a>
+        </div>
+        <div class="cards">
+            <a routerLink="feedback">Feedback</a>
+        </div>
+    </div>
+
+    <!-- route the selected cards -->
+    <div class="selected-card" style="padding: 1em;">
+        <router-outlet></router-outlet>
+    </div>
+
+</div>

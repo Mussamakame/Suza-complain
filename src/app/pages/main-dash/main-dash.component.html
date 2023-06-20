@@ -1,0 +1,48 @@
+<div class="dashboard-container">
+
+    <div class="row-card">
+        <mat-card>
+            <h2>00</h2>
+            <small>Total Complaints</small>
+        </mat-card>
+
+        <mat-card>
+            <h2>00</h2>
+            <small>Active Complaints</small>
+        </mat-card>
+
+        <mat-card>
+            <h2>00</h2>
+            <small>Closed Complaints</small>
+        </mat-card>
+
+        <mat-card>
+            <h2>00</h2>
+            <small>Monthly Complaints</small>
+        </mat-card>
+    </div>
+
+    <div class="table-container" style="padding: 0 2em;">
+        <h1 style="text-transform: capitalize;">recent complaints</h1>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let recent of recent_complaints">
+                    <td>{{ recent.name }}</td>
+                    <td>{{ recent.category }}</td>
+                    <td>{{ recent.location }}</td>
+                    <td>{{ recent.explanation }}</td>
+                    <td><button type="button" class="btn btn-success">Solved</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

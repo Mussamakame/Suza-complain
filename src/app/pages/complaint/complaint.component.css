@@ -1,0 +1,31 @@
+.complaint-container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    height: 100%;
+    /* overflow-y: auto; */
+    /* border: 2px solid green; */
+}
+
+.selection-cards {
+    display: flex;
+    /* gap: 2em; */
+    cursor: pointer;
+    box-shadow: 0 1px .4rem #BBB;
+}
+
+.selection-cards > .cards {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.selected-cards {
+    /* TODO: implemnt */
+}
+
+a {
+    text-decoration: none;
+    color: #39F;
+}

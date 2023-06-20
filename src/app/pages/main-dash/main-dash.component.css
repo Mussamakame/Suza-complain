@@ -1,0 +1,29 @@
+.row-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5em;
+    margin: 1.5em;
+}
+
+.row-card mat-card {
+    padding: 1em;
+    min-width: 300px;
+    flex: 1;
+}
+
+.row-card mat-card:nth-child(1) {
+    background-color: #FFF;
+}
+
+.row-card mat-card:nth-child(2) {
+    background-color: #39f;
+}
+
+.row-card mat-card:nth-child(3) {
+    background-color: #CCC;
+}
+
+.row-card mat-card:nth-child(4) {
+    background-color: #93f;
+}
